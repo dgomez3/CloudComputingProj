@@ -1,0 +1,17 @@
+Base Exception Type: System.ArgumentException: The value "0" is not of type "System.Single" and cannot be used in this generic collection.
+Parameter name: value
+   at System.ThrowHelper.ThrowWrongValueTypeArgumentException(Object value, Type targetType)
+   at System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
+   at Isis.Msg.BArraysToLists(Object[] resRefs, List`1 barrays) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\Isis.cs:line 24046
+   at Isis.Group.Query(Int32 nreplies, Object[] given) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\Isis.cs:line 12802
+   at CCProject.FinanceBook.ClientGet(PacketHeader header, Connection connection, String info) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\CCProject_Server.cs:line 129
+   at NetworkCommsDotNet.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, MemoryStream incomingDataStream, SendReceiveOptions options, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at System.ThrowHelper.ThrowWrongValueTypeArgumentException(Object value, Type targetType)
+   at System.Collections.Generic.List`1.System.Collections.IList.Add(Object item)
+   at Isis.Msg.BArraysToLists(Object[] resRefs, List`1 barrays) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\Isis.cs:line 24046
+   at Isis.Group.Query(Int32 nreplies, Object[] given) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\Isis.cs:line 12802
+   at CCProject.FinanceBook.ClientGet(PacketHeader header, Connection connection, String info) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\CCProject_Server.cs:line 129
+   at NetworkCommsDotNet.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, MemoryStream incomingDataStream, SendReceiveOptions options, Boolean ignoreUnknownPacketTypeOverride)

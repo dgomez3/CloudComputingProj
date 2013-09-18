@@ -1,0 +1,117 @@
+Isis V1.1102: 2013/05/03 12:31:39
+Major Isis Runtime Settings: ORACLESIZE = 3; 
+P2P/ACK port numbers = {9753/9754}; IPMC portno = 11002
+IPMC address range = {224.0.19.136-224.7.180.168}, MAXIPMCADDRS in use = 25
+---------------------------------------------------------------------------------------------
+Isis: Searching for the Isis ORACLE...
+Isis: Found the Isis.ORACLE service, attempting to connect.
+ISIS process-id: 1104, my_address = (1104)
+[Isis Resender thread] NodeHasFailed from resender.sendto for dest (4300), ID 23/0:17 (retried for 45.667 secs) failure discovery event for (4300), 
+----------------------- ISIS state for (1104) [leaderId=0]:
+Summary of network statistics:
+    SENT: 28 UDP (8264 non-duplicated bytes), 0 tokens, 5 IPMC (2260 bytes; 2 were stability packets), 0 TCP (0 bytes), 50 Acks, 8 Nacks.
+    RECV: 44 UDP (1 were dups; 11464 bytes), 0 tokens, 18 IPMC (8968 bytes; 9 were stability packets), 0 TCP (0 bytes); 1 were dups, 24 Acks, 18 Nacks, 0 token-triggered resends
+GROUPS:
+   group <ISISMEMBERS>... gaddr (0:224.0.191.199/0:0), IP address [VirtIP: 224.0.191.199, PhysIP: 224.0.19.138]
+    View[gname=<ISISMEMBERS>, gaddr=(0:224.0.191.199/0:0), viewid=1;  2 members={ [(4300)(1104)]}, hasFailed=[*--], nextIncomingMSGID={  <1:0> 1:2 1:0 }, StableTo={ ** 1 0 }, joining={ [(1104)]}, leaving={ []}, IamLeader = False
+    My recieved multicast count 3, rate 0, next outgoing msgid 0, Don't need to send stability info (last sent at 0.000; MaxBacklogSent=0), minStable=-1
+   ----------------------------------------------------------------------------------------------------
+   group <book>... gaddr (0:224.0.52.47/0:0), IP address [VirtIP: 224.0.52.47, PhysIP: 224.0.19.138]
+    View[gname=<book>, gaddr=(0:224.0.52.47/0:0), viewid=1;  2 members={ [(4300)(1104)]}, hasFailed=[*--], nextIncomingMSGID={  <1:0> 1:0 1:0 }, StableTo={ ** 0 0 }, joining={ [(1104)]}, leaving={ []}, IamLeader = False
+    My recieved multicast count 0, rate 0, next outgoing msgid 0, Don't need to send stability info (last sent at 0.000; MaxBacklogSent=0), minStable=-1
+   ----------------------------------------------------------------------------------------------------
+MEMBERSHIP ORACLE:
+   group <ORACLE>... gaddr (0:224.0.19.136/0:0), IP address [VirtIP: 224.0.19.136, PhysIP: 224.0.19.136]
+    View[gname=<ORACLE>, gaddr=(0:224.0.19.136/0:0), viewid=1;  2 members={ [(4300)(1104)]}, hasFailed=[*--], nextIncomingMSGID={  <1:0> 1:4 1:2 }, StableTo={ ** 3 1 }, joining={ []}, leaving={ []}, IamLeader = False
+    My recieved multicast count 15, rate 0, next outgoing msgid 2, Don't need to send stability info (last sent at 2.834; MaxBacklogSent=0), minStable=1
+    TRACKING PROXIES:
+       <ISISMEMBERS/(0:224.0.191.199/0:0)/INITIALVIEW[]> [VIP: 224.0.191.199, PIP: 224.0.19.138]  vid 1: next mid=1:0, rate 0,  {[(4300)(1104)]}
+       <book/(0:224.0.52.47/0:0)/INITIALVIEW[]> [VIP: 224.0.52.47, PIP: 224.0.19.138]  vid 1: next mid=1:0, rate 0,  {[(4300)(1104)]}
+
+RIPList = [(4300)]; Group RIPList = []
+Group view events list:
+IsisRdv State:
+Flow Control: 0+0/1 + 0 outgoing/unstable/on-todo-list, 0 on P2P or callback queues, 0 full RecvBB slots, 0 in UDP tunnel, 0 in IPMC tunnel, remote backlog=1
+              0 threads waiting on local congestion, 0 waiting on remote congestion
+Pending Send Buffer: 
+ Dest (4300)<p2p>, counts as 1/1 for flow control, msgid 0:17, uid 23, first sent at 9.820... retry at 10.070, retryCnt 8
+Large-Group Pending Send Buffer:
+P2PSequencer states
+-- P2P Sequencer state for OutOfOrder queue of (4300), inseqn 24, outseqn 18, last callback was at time 8.970, remote backlog=1
+-- P2P Sequencer state for OutOfOrder queue of (1104), inseqn 4, outseqn 4, last callback was at time 0.000, remote backlog=0
+TCPListState:
+MCMD Mapping:
+    Group [ISISMEMBERS]: rate = 0    VirtIPAddr=224.0.191.199, mapped to 224.0.19.138
+    Group [book]: rate = 0    VirtIPAddr=224.0.52.47, mapped to 224.0.19.138
+    Group [ORACLE]: rate = 0    VirtIPAddr=224.0.19.136, mapped to 224.0.19.136
+
+MCMD VIRTUAL SLOTS
+Virtual socket[0]:  (224.0.19.136:224.0.19.136), physical-slot [0], backlog 0
+Virtual socket[1]:  (224.0.191.199:224.0.19.138), physical-slot [1], backlog 0
+Virtual socket[2]:  (224.0.52.47:224.0.19.138), physical-slot [1], backlog 0
+MCMD PHYSICAL SLOTS
+Physical socket[0]: 224.0.19.136, refcount=1
+  in-thread <ISIS MCMD: receive-on 224.0.19.136>
+  out-thread <ISIS MCMD: send-to 224.0.19.136>, backlog 0
+Physical socket[1]: 224.0.19.138, refcount=2
+  in-thread <ISIS MCMD: receive-on 224.0.19.138>
+  out-thread <ISIS MCMD: send-to 224.0.19.138>, backlog 0
+LOCKED OBJECTS: NOT TRACKING DETAILED USE
+THREAD ILOCK STATE:
+  Thead[*](Ack-processing thread) is waiting to remove an object from AckBB
+  Thead[*](Receive-processing thread) is waiting to remove an object on RecvBB
+  Thread[0] (Ack processing thread): Waiting for [ackb:1]
+  Thread[1] (Isis p2p-socket socket reader): Waiting for [p2pB:1]
+  Thread[2] (<ORACLE> incoming p2p delivery thread): Waiting for [delivery:3]
+  Thread[3] (<ORACLE> incoming multicasts delivery thread): Waiting for [delivery:1]
+  Thread[4] (ISIS MCMD: send-to 224.0.19.136): Waiting for [bb-out:1]
+  Thread[5] (Isis <ORACLE> incoming thread): Waiting for [bb-in:1]
+  Thread[10] (<ISISMEMBERS> incoming p2p delivery thread): Waiting for [delivery:7]
+  Thread[11] (<ISISMEMBERS> incoming multicasts delivery thread): Waiting for [delivery:5]
+  Thread[12] (IM_IPMCViewCast_TUNNEL thread): Waiting for [ipmc:1]
+  Thread[13] (Loopback thread): Waiting for [barrier:1]
+  Thread[15] (ISIS MCMD: send-to 224.0.19.138): Waiting for [bb-out:3]
+  Thread[16] (Isis <ISISMEMBERS> incoming thread): Waiting for [bb-in:3]
+  Thread[19] (<book> incoming p2p delivery thread): Waiting for [delivery:11]
+  Thread[20] (<book> incoming multicasts delivery thread): Waiting for [delivery:9]
+  Thread[24] (Isis <book> incoming thread): Waiting for [bb-in:5]
+SEMAPHORE STATE:
+  (bounded buffer)  [barrier:1], Nwaiters = 1
+  (bounded buffer)  [bb-out:1], Nwaiters = 1
+  (bounded buffer)  [bb-out:3], Nwaiters = 1
+  (bounded buffer)  [bb-in:1], Nwaiters = 1
+  (bounded buffer)  [bb-in:3], Nwaiters = 1
+  (bounded buffer)  [bb-in:5], Nwaiters = 1
+  [ackb:1], Nwaiters = 1
+  [p2pB:1], Nwaiters = 1
+  [ipmc:1], Nwaiters = 1
+  [delivery:1], Nwaiters = 1
+  [delivery:3], Nwaiters = 1
+  [delivery:5], Nwaiters = 1
+  [delivery:7], Nwaiters = 1
+  [delivery:9], Nwaiters = 1
+  [delivery:11], Nwaiters = 1
+BOUNDED BUFFERS:
+  <BB:P2P>  size=1024 (0 full), GetLock=[p2pB:1], PutLock=[p2pB:0]
+  <BB:Ack>  size=512 (0 full), GetLock=[ackb:1], PutLock=[ackb:0]
+  <ORACLE:DeliverInOrder(IPMC)>  size=512 (0 full), GetLock=[delivery:1], PutLock=[delivery:0]
+  <ORACLE:DeliverInOrder(P2P)>  size=512 (0 full), GetLock=[delivery:3], PutLock=[delivery:2]
+  <ORACLE:MCMD>  size=512 (0 full), GetLock=[bb-in:1], PutLock=[bb-in:0]
+  <MCMD-outgoing:224.0.19.136>  size=512 (0 full), GetLock=[bb-out:1], PutLock=[bb-out:0]
+  <ISISMEMBERS:MCMD>  size=512 (0 full), GetLock=[bb-in:3], PutLock=[bb-in:2]
+  <book:MCMD>  size=512 (0 full), GetLock=[bb-in:5], PutLock=[bb-in:4]
+  <ISISMEMBERS:DeliverInOrder(IPMC)>  size=512 (0 full), GetLock=[delivery:5], PutLock=[delivery:4]
+  <ISISMEMBERS:DeliverInOrder(P2P)>  size=512 (0 full), GetLock=[delivery:7], PutLock=[delivery:6]
+  <IPMC:BB>  size=256 (0 full), GetLock=[ipmc:1], PutLock=[ipmc:0]
+  <Loopback>  size=1024 (0 full), GetLock=[barrier:1], PutLock=[barrier:0]
+  <MCMD-outgoing:224.0.19.138>  size=512 (0 full), GetLock=[bb-out:3], PutLock=[bb-out:2]
+  <book:DeliverInOrder(IPMC)>  size=512 (0 full), GetLock=[delivery:9], PutLock=[delivery:8]
+  <book:DeliverInOrder(P2P)>  size=512 (0 full), GetLock=[delivery:11], PutLock=[delivery:10]
+-------------------------End of State Dump------------------------------------
+
+FDETECTION message received for (4300)(I was old leader: False)
+FDETECTION(Isis_Groups) calling View.NoteFailed in <ISISMEMBERS> for (4300)
+FDETECTION(Isis_Groups) calling View.NoteFailed in <book> for (4300)
+FDETECTION(Isis_Groups) calling View.NoteFailed in <ORACLE> for (4300)
+FDETECTION(Isis_Groups) calling View.NoteFailed in <ISISMEMBERS> for (4300)
+FDETECTION(Isis_Groups) calling View.NoteFailed in <book> for (4300)

@@ -1,0 +1,12 @@
+Base Exception Type: System.FormatException: Input string was not in a correct format.
+   at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at CCProject.FinanceBook.ClientUpdate(PacketHeader header, Connection connection, String itembook) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\CCProject_Server.cs:line 150
+   at NetworkCommsDotNet.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, MemoryStream incomingDataStream, SendReceiveOptions options, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at System.Number.ParseSingle(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Single.Parse(String s)
+   at CCProject.FinanceBook.ClientUpdate(PacketHeader header, Connection connection, String itembook) in c:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject\CCProject_Server.cs:line 150
+   at NetworkCommsDotNet.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, MemoryStream incomingDataStream, SendReceiveOptions options, Boolean ignoreUnknownPacketTypeOverride)

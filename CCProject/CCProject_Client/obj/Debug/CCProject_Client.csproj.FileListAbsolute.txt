@@ -1,0 +1,7 @@
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\bin\Debug\CCProject_Client.exe.config
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\bin\Debug\CCProject_Client.exe
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\bin\Debug\CCProject_Client.pdb
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\bin\Debug\NetworkCommsDotNetComplete.dll
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\obj\Debug\CCProject_Client.csprojResolveAssemblyReference.cache
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\obj\Debug\CCProject_Client.exe
+C:\Users\Dan\Documents\Visual Studio 2012\Projects\CCProject\CCProject_Client\obj\Debug\CCProject_Client.pdb

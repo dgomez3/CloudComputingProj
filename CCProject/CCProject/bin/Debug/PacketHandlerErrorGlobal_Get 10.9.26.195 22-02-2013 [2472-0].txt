@@ -1,0 +1,18 @@
+Base Exception Type: System.MissingMethodException: No handler for request REQUEST(1) matches provided argument types {  Isis.Timeout System.String } (found  handler[ System.String  ] )
+   at Isis.Group.cbCheck(Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 15551
+   at Isis.Group._Query(Int32 vid, Int32 mid, Boolean sentByOracle, Boolean isRaw, querySender AsyncSendQuery, Int32 nreplies, Timeout timeout, Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 13219
+   at Isis.Group._Query(Boolean sentByOracle, Boolean isRaw, querySender AsyncSendQuery, Int32 nreplies, Timeout timeout, Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 13195
+   at Isis.Group.QueryToBA(Int32 nreplies, Timeout timeout, Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 12754
+   at Isis.Group.Query(Int32 nreplies, Object[] given) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 12801
+   at Server.Server.ClientGet(PacketHeader header, Connection connection, String name) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Server.cs:line 86
+   at NetworkCommsDotNet.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, MemoryStream incomingDataStream, SendReceiveOptions options, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at Isis.Group.cbCheck(Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 15551
+   at Isis.Group._Query(Int32 vid, Int32 mid, Boolean sentByOracle, Boolean isRaw, querySender AsyncSendQuery, Int32 nreplies, Timeout timeout, Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 13219
+   at Isis.Group._Query(Boolean sentByOracle, Boolean isRaw, querySender AsyncSendQuery, Int32 nreplies, Timeout timeout, Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 13195
+   at Isis.Group.QueryToBA(Int32 nreplies, Timeout timeout, Object[] obs) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 12754
+   at Isis.Group.Query(Int32 nreplies, Object[] given) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Isis.cs:line 12801
+   at Server.Server.ClientGet(PacketHeader header, Connection connection, String name) in C:\Users\ALEXANDER\Dropbox\Projects\CSE 40772 Cloud Computing\ISIS2\DistributedPhoneBook\Server\Server.cs:line 86
+   at NetworkCommsDotNet.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, MemoryStream incomingDataStream, SendReceiveOptions options, Boolean ignoreUnknownPacketTypeOverride)
